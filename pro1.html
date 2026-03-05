@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>สำนักสักยันต์ อาจารย์ตู๋ นะเมตตา</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Kanit:wght@300;400;600;700&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pro1.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo"> Ajarn Tu Nametta </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">หน้าแรก</a></li>
+    <li><a href="pro2.html" class="active" >เทศกาล</a></li>
+    <li><a href="#yantra">ความหมายลายยันต์</a></li>
+    <li><a href="#master">เกี่ยวกับอาจารย์</a></li>
+    <li><a href="#history">ประวัติสำนัก</a></li>
+    <li><a href="#reviews">รีวิวลูกค้า</a></li>
+    <li><a href="#contact">ติดต่อเรา</a></li>
+    <li><a href="#reveal">จองคิวสัก</a></li>
+    
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+<section class="hero" id="hero">
+  <div class="hero-photo-bg"><img src="Ajan.jpg" alt="อาจารย์ตู๋ นะเมตตา"></div>
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-subtitle-top">Ajarn Tu Nametta · สำนักสักยันต์</p>
+    <h1 class="hero-title">สำนักสักยันต์ อาจารย์ตุ๊ นะเมตตา Ajarn Tu Nametta สายขาวเขมร เเก้คุณไสย </h1>
+    <div class="hero-divider">
+      <div class="hero-divider-line"></div><span>✦</span><div class="hero-divider-line"></div>
+    </div>
+    <p class="hero-desc">
+      ศิลปะความเชื่อโบราณที่สืบทอดจากครูบาอาจารย์สู่ปัจจุบัน<br>
+      สายขาวเขมร แก้คุณโสย โดย <strong>อาจารย์ตู๋ นะเมตตา</strong>
+    </p>
+    <div class="hero-stats">
+      <div class="stat-item"><div class="stat-num">15+</div><div class="stat-label">ปีประสบการณ์</div></div>
+      <div class="stat-divider">✦</div>
+      <div class="stat-item"><div class="stat-num">50+</div><div class="stat-label">ลายยันต์</div></div>
+      <div class="stat-divider">✦</div>
+      <div class="stat-item"><div class="stat-num">1,000+</div><div class="stat-label">ลูกค้าทั่วโลก</div></div>
+    </div>
+    <div class="hero-buttons">
+      <a href="#reveal" class="btn-primary"><span> จองคิวสัก</span></a>
+      <a href="#yantra" class="btn-outline">ดูลายยันต์ทั้งหมด</a>
+    </div>
+  </div>
+  <div class="scroll-hint"><span>เลื่อนลง</span><div class="scroll-line"></div></div>
+</section>
+
+<!-- ══ YANTRA ══ -->
+<section class="yantra-section" id="yantra">
+  <div class="reveal" style="text-align:center;">
+    <p class="section-label">Ajarn Tu Nametta</p>
+    <h2 class="section-title">ความหมายลายยันต์</h2>
+    <p class="section-sub">เลือกลายที่เหมาะกับชะตาและจุดประสงค์ของท่าน</p>
+    <div class="thai-divider">
+      <div class="thai-divider-line"></div>
+      <span class="thai-divider-ornament">᪻</span>
+      <div class="thai-divider-line right"></div>
+    </div>
+    <div class="yantra-filters">
+      <button class="filter-btn active" data-filter="all">ทั้งหมด</button>
+      <button class="filter-btn" data-filter="protection">คุ้มครอง</button>
+      <button class="filter-btn" data-filter="fortune">โชคลาภ</button>
+      <button class="filter-btn" data-filter="power">อำนาจ</button>
+      <button class="filter-btn" data-filter="love">เมตตา</button>
+    </div>
+  </div>
+
+  <div class="yantra-grid" id="yantraGrid">
+
+    <div class="yantra-card reveal reveal-delay-1" data-cat="protection fortune">
+      <div class="card-icon" style="display: flex; justify-content: center; align-items: center;">
+        <img class="ATN1" src="Ajan.jpg"  width="100px" height="100px" style="border-radius: 50%; display: block; cursor: pointer;" onclick="expandImage(this.src)">
+      </div>
+      <h3 class="card-title">ยันต์เก้ายอด</h3>
+      <div class="card-line"></div>
+      <p class="card-desc">เมตตามหานิยม คุ้มครองผู้สวมใส่จากสิ่งอัปมงคลทั้งปวง เสริมโชคลาภและป้องกันภัย คุ้มครองดวงชะตา เป็นยันต์ศักดิ์สิทธิ์ที่นิยมมากที่สุด</p>
+      <div class="card-tags"><span class="tag">เมตตา</span><span class="tag">ป้องกันภัย</span><span class="tag">โชคลาภ</span></div>
+      <button class="card-consult-btn">ปรึกษาลายนี้ →</button>
+      <br> <br>
+      <p class="card-desc">*หมายเหตุ: กดตรงรูปภาพเพื่อขยายภาพ*</p>
+    </div>
+
+    <div class="yantra-card reveal reveal-delay-1" data-cat="protection fortune">
+      <div class="card-icon" style="display: flex; justify-content: center; align-items: center;">
+        <img class="ATN1" src="Tire.jpg"  width="100px" height="100px" style="border-radius: 50%; display: block; cursor: pointer;" onclick="expandImage(this.src)">
+      </div>
+      <h3 class="card-title">ยันต์เก้ายอด</h3>
+      <div class="card-line"></div>
+      <p class="card-desc">เมตตามหานิยม คุ้มครองผู้สวมใส่จากสิ่งอัปมงคลทั้งปวง เสริมโชคลาภและป้องกันภัย คุ้มครองดวงชะตา เป็นยันต์ศักดิ์สิทธิ์ที่นิยมมากที่สุด</p>
+      <div class="card-tags"><span class="tag">เมตตา</span><span class="tag">ป้องกันภัย</span><span class="tag">โชคลาภ</span></div>
+      <button class="card-consult-btn">ปรึกษาลายนี้ →</button>
+      <br> <br>
+      <p class="card-desc">*หมายเหตุ: กดตรงรูปภาพเพื่อขยายภาพ*</p>
+    </div>
+        <div class="yantra-card reveal reveal-delay-1" data-cat="protection fortune">
+      <div class="card-icon" style="display: flex; justify-content: center; align-items: center;">
+        <img class="ATN1" src="Ajan.jpg"  width="100px" height="100px" style="border-radius: 50%; display: block; cursor: pointer;" onclick="expandImage(this.src)">
+      </div>
+      <h3 class="card-title">ยันต์เก้ายอด</h3>
+      <div class="card-line"></div>
+      <p class="card-desc">เมตตามหานิยม คุ้มครองผู้สวมใส่จากสิ่งอัปมงคลทั้งปวง เสริมโชคลาภและป้องกันภัย คุ้มครองดวงชะตา เป็นยันต์ศักดิ์สิทธิ์ที่นิยมมากที่สุด</p>
+      <div class="card-tags"><span class="tag">เมตตา</span><span class="tag">ป้องกันภัย</span><span class="tag">โชคลาภ</span></div>
+      <button class="card-consult-btn">ปรึกษาลายนี้ →</button>
+      <br> <br>
+      <p class="card-desc">*หมายเหตุ: กดตรงรูปภาพเพื่อขยายภาพ*</p>
+    </div>
+
+    <div class="yantra-card reveal reveal-delay-1" data-cat="protection fortune">
+      <div class="card-icon" style="display: flex; justify-content: center; align-items: center;">
+        <img class="ATN1" src="Tire.jpg"  width="100px" height="100px" style="border-radius: 50%; display: block; cursor: pointer;" onclick="expandImage(this.src)">
+      </div>
+      <h3 class="card-title">ยันต์เก้ายอด</h3>
+      <div class="card-line"></div>
+      <p class="card-desc">เมตตามหานิยม คุ้มครองผู้สวมใส่จากสิ่งอัปมงคลทั้งปวง เสริมโชคลาภและป้องกันภัย คุ้มครองดวงชะตา เป็นยันต์ศักดิ์สิทธิ์ที่นิยมมากที่สุด</p>
+      <div class="card-tags"><span class="tag">เมตตา</span><span class="tag">ป้องกันภัย</span><span class="tag">โชคลาภ</span></div>
+      <button class="card-consult-btn">ปรึกษาลายนี้ →</button>
+      <br> <br>
+      <p class="card-desc">*หมายเหตุ: กดตรงรูปภาพเพื่อขยายภาพ*</p>
+    </div>
+
+    <!-- EXTRA CARDS (hidden by default) -->
+    <div class="yantra-card extra-card" data-cat="love fortune">
+      <div class="card-icon">
+        <img class="ATN1" src="Tire.jpg"  width="100px" height="100px" style="border-radius: 50%; display: block; cursor: pointer;" onclick="expandImage(this.src)">
+        </svg><div class="card-number">5</div>
+      </div>
+      <h3 class="card-title">ยันต์พระพรหม</h3>
+      <div class="card-line"></div>
+      <p class="card-desc">เสริมดวงความรัก เมตตามหานิยม ให้ผู้คนรักใคร่เมตตา เหมาะสำหรับผู้ทำงานบริการ ค้าขาย หรือต้องการให้ผู้อื่นชื่นชอบ</p>
+      <div class="card-tags"><span class="tag">เมตตา</span><span class="tag">ความรัก</span><span class="tag">มหานิยม</span></div>
+      <button class="card-consult-btn">ปรึกษาลายนี้ →</button>
+    </div>
+
+    <div class="yantra-card extra-card" data-cat="fortune">
+      <div class="card-icon">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#D4AF37" stroke-width="1.2" xmlns="http://www.w3.org/2000/svg">
+          <rect x="15" y="15" width="70" height="70" rx="4"/>
+          <rect x="25" y="25" width="50" height="50" rx="2"/>
+          <line x1="50" y1="15" x2="50" y2="85"/><line x1="15" y1="50" x2="85" y2="50"/>
+          <circle cx="50" cy="50" r="8" fill="rgba(212,175,55,0.2)"/>
+          <circle cx="50" cy="50" r="3" fill="#D4AF37"/>
+        </svg><div class="card-number">๕</div>
+      </div>
+      <h3 class="card-title">ยันต์มหาลาภ</h3>
+      <div class="card-line"></div>
+      <p class="card-desc">เรียกทรัพย์ เสริมโชคลาภ การค้า การงาน เหมาะสำหรับพ่อค้าแม่ค้า นักธุรกิจ ผู้ต้องการความมั่งคั่ง ช่วยเปิดทางโชคและโอกาสใหม่ๆ</p>
+      <div class="card-tags"><span class="tag">โชคลาภ</span><span class="tag">ทรัพย์</span><span class="tag">ค้าขาย</span></div>
+      <button class="card-consult-btn">ปรึกษาลายนี้ →</button>
+    </div>
+
+    <div class="yantra-card extra-card" data-cat="protection">
+      <div class="card-icon">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#D4AF37" stroke-width="1.2" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 10 L85 28 L85 55 Q85 78 50 92 Q15 78 15 55 L15 28 Z" fill="rgba(212,175,55,0.08)"/>
+          <path d="M50 22 L75 36 L75 54 Q75 70 50 80 Q25 70 25 54 L25 36 Z" fill="rgba(212,175,55,0.06)"/>
+          <path d="M38 52 L46 60 L64 42" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg><div class="card-number">๖</div>
+      </div>
+      <h3 class="card-title">ยันต์กันภัย</h3>
+      <div class="card-line"></div>
+      <p class="card-desc">ป้องกันภัยอันตราย คุ้มครองจากอุบัติเหตุ ศัตรูคิดร้าย และสิ่งชั่วร้ายทั้งปวง เหมาะสำหรับผู้ทำงานเสี่ยงภัย ต้องการความปลอดภัยในชีวิต</p>
+      <div class="card-tags"><span class="tag">ป้องกัน</span><span class="tag">คุ้มครอง</span><span class="tag">ปลอดภัย</span></div>
+      <button class="card-consult-btn">ปรึกษาลายนี้ →</button>
+    </div>
+
+    <div class="yantra-card extra-card" data-cat="love">
+      <div class="card-icon">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#D4AF37" stroke-width="1.2" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 75 Q20 55 20 35 A18 18 0 0 1 50 28 A18 18 0 0 1 80 35 Q80 55 50 75Z" fill="rgba(212,175,55,0.1)"/>
+          <circle cx="50" cy="50" r="38" stroke-dasharray="4 6"/><circle cx="50" cy="50" r="20"/>
+        </svg><div class="card-number">๗</div>
+      </div>
+      <h3 class="card-title">ยันต์พิสมร</h3>
+      <div class="card-line"></div>
+      <p class="card-desc">เสน่ห์มหานิยม ดึงดูดความรัก ทำให้ผู้พบเห็นหลงใหล เหมาะสำหรับผู้โสดที่ต้องการคู่ครอง หรือต้องการเสริมความสัมพันธ์ให้แน่นแฟ้น</p>
+      <div class="card-tags"><span class="tag">เสน่ห์</span><span class="tag">ความรัก</span><span class="tag">คู่ครอง</span></div>
+      <button class="card-consult-btn">ปรึกษาลายนี้ →</button>
+    </div>
+
+    <div class="yantra-card extra-card" data-cat="power protection">
+      <div class="card-icon">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#D4AF37" stroke-width="1.2" xmlns="http://www.w3.org/2000/svg">
+          <polygon points="50,8 92,35 92,65 50,92 8,65 8,35" fill="rgba(212,175,55,0.06)"/>
+          <polygon points="50,20 80,38 80,62 50,80 20,62 20,38" fill="rgba(212,175,55,0.04)"/>
+          <line x1="50" y1="8" x2="50" y2="92"/><line x1="8" y1="50" x2="92" y2="50"/>
+          <line x1="26" y1="26" x2="74" y2="74"/><line x1="74" y1="26" x2="26" y2="74"/>
+          <circle cx="50" cy="50" r="10" fill="rgba(212,175,55,0.2)"/>
+        </svg><div class="card-number">๘</div>
+      </div>
+      <h3 class="card-title">ยันต์แปดทิศ</h3>
+      <div class="card-line"></div>
+      <p class="card-desc">คุ้มครองทั้ง ๘ ทิศ ป้องกันภัยจากทุกทิศทาง เสริมบารมีและความสำเร็จในทุกด้านของชีวิต เป็นยันต์ครอบจักรวาลที่ทรงพลังมาก</p>
+      <div class="card-tags"><span class="tag">คุ้มครอง</span><span class="tag">ทุกทิศ</span><span class="tag">บารมี</span></div>
+      <button class="card-consult-btn">ปรึกษาลายนี้ →</button>
+    </div>
+
+    <div class="yantra-card extra-card" data-cat="fortune power">
+      <div class="card-icon">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#D4AF37" stroke-width="1.2" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="50" cy="50" r="42"/>
+          <path d="M50 15 L55 35 L76 35 L60 47 L65 68 L50 55 L35 68 L40 47 L24 35 L45 35Z" fill="rgba(212,175,55,0.15)"/>
+          <circle cx="50" cy="50" r="15"/><circle cx="50" cy="50" r="5" fill="#D4AF37" opacity="0.6"/>
+        </svg><div class="card-number">๙</div>
+      </div>
+      <h3 class="card-title">ยันต์นะหน้าทอง</h3>
+      <div class="card-line"></div>
+      <p class="card-desc">เสริมหน้าที่การงาน ให้ผู้ใหญ่รัก เจ้านายเมตตา เหมาะสำหรับผู้ต้องการความก้าวหน้าในอาชีพ ช่วยให้ได้รับการสนับสนุนและโอกาสที่ดี</p>
+      <div class="card-tags"><span class="tag">การงาน</span><span class="tag">เมตตา</span><span class="tag">ก้าวหน้า</span></div>
+      <button class="card-consult-btn">ปรึกษาลายนี้ →</button>
+    </div>
+
+  </div>
+
+  <div class="yantra-toggle-wrap reveal">
+    <button class="btn-show-all" id="btnShowAll">
+      <span id="btnShowAllText">✦ แสดงลายยันต์ทั้งหมด (9 ลาย)</span>
+    </button>
+    <p class="yantra-note">* ลายยันต์ทุกชนิดออกแบบตามความเหมาะสมของแต่ละบุคคล ปรึกษาอาจารย์ก่อนตัดสินใจ</p>
+  </div>
+</section>
+
+<!-- image modal for expanding tattoos -->
+<div id="imgModal" class="img-modal" onclick="closeImgModal()">
+  <img id="modalImg" src="" alt="expanded tattoo">
+</div>
+<style>
+  .img-modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    justify-content: center;
+    align-items: center;
+  }
+  .img-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 20px #000;
+  }
+</style>
+
+<!-- ══ MASTER ══ -->
+<section class="master-section" id="master">
+  <div class="master-photo-col reveal">
+    <div class="master-photo-frame">
+      <img src="Ajan.jpg" alt="อาจารย์ตู๋ นะเมตตา">
+      <div class="master-photo-border"></div>
+    </div>
+    <div class="master-badge">✦ อาจารย์ตู๋ นะเมตตา ✦</div>
+  </div>
+  <div class="master-text reveal reveal-delay-2">
+    <p class="section-label">About the Master</p>
+    <h2 class="section-title">เกี่ยวกับอาจารย์<br>ตู๊ นะเมตตา</h2>
+    <div class="thai-divider" style="margin-bottom:28px;">
+      <div class="thai-divider-line"></div>
+      <span class="thai-divider-ornament">᪻</span>
+      <div class="thai-divider-line right"></div>
+    </div>
+    <p><strong>อาจารย์ตู๊ นะเมตตา</strong> ผู้เชี่ยวชาญสักยันต์สายขาวเขมร แก้คุณโสย ผู้สืบทอดวิชาโดยตรงจากครูบาอาจารย์ผู้ทรงวิทยาคม ทุกลายสักผ่านพิธีปลุกเสกอย่างถูกต้องตามตำราโบราณ</p>
+    <p>สำนักตั้งอยู่ในบรรยากาศศักดิ์สิทธิ์ ล้อมรอบด้วยพระพุทธรูปและเครื่องสักการะโบราณนับร้อยองค์ ทุกการสักคือพิธีกรรมที่ผสมผสาน <strong>พุทธ พราหมณ์ และไสยศาสตร์</strong> อย่างลงตัว</p>
+    <div class="master-info-grid">
+      <div class="master-info-item">
+        <span class="info-icon">📞</span>
+        <div><div class="info-label">โทรศัพท์</div><div class="info-value">(66) 065-472-1999</div></div>
+      </div>
+      <div class="master-info-item">
+        <span class="info-icon">📅</span>
+        <div><div class="info-label">วันไหว้ครูประจำปี</div><div class="info-value">15 เมษายน ของทุกปี</div></div>
+      </div>
+      <div class="master-info-item">
+        <span class="info-icon">🙏</span>
+        <div><div class="info-label">สายวิชา</div><div class="info-value">ขาวเขมร · แก้คุณโสย</div></div>
+      </div>
+      <div class="master-info-item">
+        <span class="info-icon">🌏</span>
+        <div><div class="info-label">รับลูกค้า</div><div class="info-value">ไทย · ต่างประเทศ · ทุกเชื้อชาติ</div></div>
+      </div>
+    </div>
+    <blockquote class="history-quote">"นะ โม พุท ธา ยะ — เชื่อมั่น ศรัทธา บูชาครู"</blockquote>
+  </div>
+</section>
+
+<!-- ══ HISTORY ══ -->
+<section class="history-section" id="history">
+  <div class="history-text reveal">
+    <p class="section-label">Studio History</p>
+    <h2 class="section-title">ประวัติสำนักสักยันต์</h2>
+    <div class="thai-divider" style="margin-bottom:28px;">
+      <div class="thai-divider-line"></div>
+      <span class="thai-divider-ornament">᪻</span>
+      <div class="thai-divider-line right"></div>
+    </div>
+    <div class="history-timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot">✦</div>
+        <div class="timeline-content">
+          <div class="timeline-year">จุดเริ่มต้น</div>
+          <p>อาจารย์ตู๋เริ่มศึกษาวิชาสักยันต์ตั้งแต่ยังเยาว์วัย รับการถ่ายทอดวิชาโดยตรงจากครูบาอาจารย์ผู้ทรงคุณวุฒิในสายขาวเขมร</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">✦</div>
+        <div class="timeline-content">
+          <div class="timeline-year">ก่อตั้งสำนัก</div>
+          <p>เปิดสำนักสักยันต์อย่างเป็นทางการ นำวิชาความรู้ที่ได้รับมาให้บริการแก่ผู้ศรัทธาทั้งในและต่างประเทศ</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">✦</div>
+        <div class="timeline-content">
+          <div class="timeline-year">วันไหว้ครู ๑๕ เมษายน</div>
+          <p>จัดพิธีไหว้ครูประจำปีทุกวันที่ 15 เมษายน รวบรวมลูกศิษย์จากทั่วโลกมาร่วมสักการะบูชาครู และต่ออายุพลังยันต์</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">✦</div>
+        <div class="timeline-content">
+          <div class="timeline-year">ปัจจุบัน</div>
+          <p>สำนักเป็นที่รู้จักในระดับนานาชาติ รับลูกค้าจากทั่วโลก ยังคงรักษาวิถีดั้งเดิมและความศักดิ์สิทธิ์ของพิธีกรรมอย่างเคร่งครัด</p>
+        </div>
+      </div>
+    </div>
+    <blockquote class="history-quote">"ยันต์ทุกลายล้วนมีพลังและความหมายเฉพาะตัว — ไม่ใช่เพียงลวดลาย แต่คือพันธสัญญาระหว่างผู้สักและจักรวาล"</blockquote>
+  </div>
+
+  <div class="history-visual reveal reveal-delay-2">
+    <div class="studio-photo-frame">
+      <img src="BYG.jpg" alt="ภายในสำนัก">
+      <div class="studio-photo-overlay"><span>ภายในสำนัก · บรรยากาศศักดิ์สิทธิ์</span></div>
+    </div>
+    <div class="studio-features">
+
+      <div class="studio-feat"><span class="feat-icon">📿</span><span>พิธีกรรมครบถ้วนตามตำราโบราณ</span></div>
+      <div class="studio-feat"><span class="feat-icon">🌐</span><span>รับลูกค้าต่างประเทศ มีล่ามภาษาอังกฤษ</span></div>
+      <div class="studio-feat"><span class="feat-icon">🩺</span><span>อุปกรณ์สะอาด ถูกสุขอนามัย</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ REVIEWS ══ -->
+<section class="reviews-section" id="reviews">
+  <div class="reveal" style="text-align:center;">
+    <p class="section-label">Client Reviews</p>
+    <h2 class="section-title">รีวิวจากลูกค้า</h2>
+    <p class="section-sub">ประสบการณ์จริงจากผู้ที่เคยสักกับอาจารย์ตู๋</p>
+    <div class="thai-divider">
+      <div class="thai-divider-line"></div>
+      <span class="thai-divider-ornament">᪻</span>
+      <div class="thai-divider-line right"></div>
+    </div>
+  </div>
+
+  <div class="rating-summary reveal">
+    <div class="rating-big">5.0</div>
+    <div class="rating-detail">
+      <div class="rating-stars-big">★★★★★</div>
+      <div class="rating-count">จากรีวิว 200+ รายการ</div>
+      <div class="rating-bars">
+        <div class="rbar"><span>5★</span><div class="rbar-track"><div class="rbar-fill" style="width:92%"></div></div><span>92%</span></div>
+        <div class="rbar"><span>4★</span><div class="rbar-track"><div class="rbar-fill" style="width:6%"></div></div><span>6%</span></div>
+        <div class="rbar"><span>3★</span><div class="rbar-track"><div class="rbar-fill" style="width:2%"></div></div><span>2%</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews-grid">
+    <div class="review-card reveal reveal-delay-1">
+      <div class="review-quote-mark">"</div>
+      <p class="review-text">รู้สึกประทับใจมากกับความละเอียดและความตั้งใจของอาจารย์ ลายออกมาสวยงามและมีความหมายลึกซึ้ง รู้สึกได้ถึงพลังที่แตกต่างจากสักทั่วไปจริงๆ</p>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-author">
+        <div class="author-avatar">ก</div>
+        <div><div class="author-name">คุณกมลชนก วิเศษสิทธิ์</div><div class="author-loc">กรุงเทพมหานคร 🇹🇭</div></div>
+      </div>
+    </div>
+    <div class="review-card reveal reveal-delay-2">
+      <div class="review-quote-mark">"</div>
+      <p class="review-text">Came all the way from Singapore specifically for this. The master explained every detail and the ceremony was incredibly meaningful. A truly life-changing experience.</p>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-author">
+        <div class="author-avatar">M</div>
+        <div><div class="author-name">Michael Chen</div><div class="author-loc">Singapore 🇸🇬</div></div>
+      </div>
+    </div>
+    <div class="review-card reveal reveal-delay-3">
+      <div class="review-quote-mark">"</div>
+      <p class="review-text">ไม่ใช่แค่การสัก แต่คือพิธีกรรมที่ศักดิ์สิทธิ์ อาจารย์มีความเชี่ยวชาญและมีความเคารพต่อศาสตร์โบราณนี้มาก แนะนำทุกคนที่อยากสัมผัสของแท้</p>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-author">
+        <div class="author-avatar">ส</div>
+        <div><div class="author-name">คุณสมชาย พรหมสุวรรณ</div><div class="author-loc">เชียงใหม่ 🇹🇭</div></div>
+      </div>
+    </div>
+    <div class="review-card reveal reveal-delay-1">
+      <div class="review-quote-mark">"</div>
+      <p class="review-text">J'ai voyagé depuis Paris pour vivre cette expérience unique. Le maître est exceptionnel, chaque tatouage est une œuvre d'art spirituelle. Je reviendrai certainement.</p>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-author">
+        <div class="author-avatar">S</div>
+        <div><div class="author-name">Sophie Dupont</div><div class="author-loc">Paris, France 🇫🇷</div></div>
+      </div>
+    </div>
+    <div class="review-card reveal reveal-delay-2">
+      <div class="review-quote-mark">"</div>
+      <p class="review-text">อาจารย์เลือกลายที่เหมาะสมกับตัวเองมากๆ รู้สึกว่าท่านอ่านชะตาได้จริง หลังสักแล้วชีวิตดีขึ้นหลายอย่าง ทั้งการงานและความสัมพันธ์</p>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-author">
+        <div class="author-avatar">ว</div>
+        <div><div class="author-name">คุณวิชัย ศรีสุข</div><div class="author-loc">ขอนแก่น 🇹🇭</div></div>
+      </div>
+    </div>
+    <div class="review-card reveal reveal-delay-3">
+      <div class="review-quote-mark">"</div>
+      <p class="review-text">The atmosphere of the studio is magical — surrounded by Buddha statues and sacred objects. Ajarn Tu is welcoming and professional. Highly recommend for authentic Sak Yant.</p>
+      <div class="review-stars">★★★★★</div>
+      <div class="review-author">
+        <div class="author-avatar">J</div>
+        <div><div class="author-name">James Walker</div><div class="author-loc">London, UK 🇬🇧</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA ══ -->
+ 
+<section class="cta-section">
+  <div class="reveal" id="reveal">
+    <div class="cta-ornament">᪻ ✦ ᪻</div>
+    <h2 class="cta-title">พร้อมสัมผัสศาสตร์แห่งความขลังแล้วหรือยัง?</h2>
+    <p class="cta-desc">นัดหมายกับอาจารย์ตุ๊ — ปรึกษาก่อนตัดสินใจ</p>
+    <a href="#contac" class="btn-cta">👉 จองคิวสักตอนนี้</a>
+  </div>
+</section>
+
+<!-- ══ CONTACT ══ -->
+<section class="contact-section" id="contact">
+  <div class="reveal" style="text-align:center;">
+    <p class="section-label">Get in Touch</p>
+    <h2 class="section-title">ติดต่อเรา</h2>
+    <p class="section-sub">ติดต่อเพื่อนัดหมาย ปรึกษาลาย หรือสอบถามข้อมูลเพิ่มเติม</p>
+    <div class="thai-divider">
+      <div class="thai-divider-line"></div>
+      <span class="thai-divider-ornament">᪻</span>
+      <div class="thai-divider-line right"></div>
+    </div>
+  </div>
+
+  <div class="contact-grid reveal">
+    <div class="contact-cards">
+      <div class="contact-card">
+        <div class="cc-icon">📞</div>
+        <div class="cc-label">โทรศัพท์</div>
+        <div class="cc-value">(66) 065-472-1999</div>
+        <a href="tel:+660654721999" class="cc-btn">โทรเลย</a>
+      </div>
+      <div class="contact-card">
+        <div class="cc-icon">💬</div>
+        <div class="cc-label">LINE</div>
+        <div class="cc-value">@sakyant.tu</div>
+        <a href="#" class="cc-btn">เพิ่มเพื่อน</a>
+      </div>
+      <div class="contact-card">
+        <div class="cc-icon">📘</div>
+        <div class="cc-label">Facebook</div>
+        <div class="cc-value">สำนักสักยันต์ อาจารย์ตุ๊ นะเมตตา Ajarn Tu Nametta สายขาวเขมร เเก้คุณไสย</div>
+        <a href="https://www.facebook.com/profile.php?id=100064620523006&sk=photos" class="cc-btn">ติดตาม</a>
+      </div>
+
+  </div>
+
+  <div class="address-map-wrap reveal">
+    <div class="address-block">
+      <div class="address-title">✦ ข้อมูลสำนัก</div>
+      <div class="address-item"><span>📍</span> ติดต่อสอบถามที่อยู่สำนักโดยตรงทาง LINE หรือโทรศัพท์</div>
+      <div class="address-item"><span>🕐</span> เปิดทุกวัน 09:00 – 18:00 น. (โดยนัดหมายล่วงหน้าเท่านั้น)</div>
+      <div class="address-item"><span>📅</span> วันไหว้ครูประจำปี: <strong>15 เมษายน</strong> ของทุกปี</div>
+      <div class="address-item"><span>🌏</span> รับลูกค้าจากทุกประเทศทั่วโลก · International clients welcome</div>
+    </div>
+    <div>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.7536754892!2d99.12430062345678!3d18.7253303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30da29060891f56f%3A0x1ab103c7a1a926b0!2z4Lit4Lix4LiZ4Liq4LiZ4LiyIOa7m-W6phi-W4jluJvluqHluIzluInluK_luobluYnluI3lupc!5e0!3m2!1sth!2sth!4v1234567890" frameborder="0"     width="100%"
+    height="350"
+    style="border:0; border-radius:8px;"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand-name">✦ สำนักสักยันต์ อาจารย์ตู๊ นะเมตตา ✦</div>
+      <p class="footer-brand-desc">ศิลปะโบราณที่สืบทอดจากบรรพบุรุษ ทุกลายสักล้วนเปี่ยมด้วยพลังและความหมาย — AJarn Tu Nametta · Sak Yant Studio · สายขาวเขมร แก้คุณโสย</p>
+      <div class="footer-social">
+        <a class="social-btn" title="Facebook" href="https://www.facebook.com/profile.php?id=100064620523006">f</a>
+        <a class="social-btn" title="Line" href="https://line.me/ti/p/~@sakyant.tu">L</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-heading">เมนูหลัก</div>
+      <ul class="footer-links">
+        <li><a href="#hero">หน้าแรก</a></li>
+        <li><a href="#yantra">ความหมายลายยันต์</a></li>
+        <li><a href="#master">เกี่ยวกับอาจารย์</a></li>
+        <li><a href="#history">ประวัติสำนัก</a></li>
+        <li><a href="#reviews">รีวิวลูกค้า</a></li>
+        <li><a href="#contact">ติดต่อเรา</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-heading">ติดต่อด่วน</div>
+      <div class="footer-contact-item"><span class="contact-icon">📞</span><span>(66) 065-472-1999</span></div>
+      <div class="footer-contact-item"><span class="contact-icon">🕐</span><span>08:00–15:00 น. ทุกวัน (นัดหมายล่วงหน้า)</span></div>
+      <div class="footer-contact-item"><span class="contact-icon">📅</span><span>ไหว้ครู: 15 เมษายน ทุกปี</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2024 สำนักสักยันต์อาจารย์ตู๊ นะเมตตา · สงวนลิขสิทธิ์</div>
+    <div class="footer-ornament">✦ ᪻ ✦ ᪻ ✦</div>
+  </div>
+</footer>
+
+<script src="pro1.js"></script>
+</body>
+</html>

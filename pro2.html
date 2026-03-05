@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เทศกาลพิเศษ · สำนักสักยันต์อาจารย์ตู๋ นะเมตตา</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Kanit:wght@300;400;600;700;800&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="pro2.css">
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav id="navbar">
+  <a href="index.html" class="nav-logo">✦ SAK YANT ✦</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="pro1.html#hero">หน้าแรก</a></li>
+    <li><a href="pro2.html" class="active" >เทศกาล</a></li>
+    <li><a href="pro1.html#yantra">ความหมายลายยันต์</a></li>
+    <li><a href="pro1.html#master">เกี่ยวกับอาจารย์</a></li>
+    <li><a href="pro1.html#history">ประวัติสำนัก</a></li>
+    <li><a href="pro1.html#reviews">รีวิวลูกค้า</a></li>
+    <li><a href="pro1.html#contact">ติดต่อเรา</a></li>
+  </ul>
+  <div class="hamburger" id="ham"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content">
+    <p class="hero-eye">Sacred Festivals & Special Ceremonies</p>
+    <h1 class="hero-title">เทศกาลพิเศษ<br>แห่งพลังศักดิ์สิทธิ์</h1>
+    <div class="hero-div"><div class="h-line"></div><span>᪻</span><div class="h-line"></div></div>
+    <p class="hero-desc">ร่วมพิธีกรรมโบราณในวันมงคล — ทุกเทศกาลคือโอกาสพิเศษที่มีเพียงปีละครั้ง<br>เสริมพลังยันต์ บูชาครู และเปิดรับพลังจักรวาลที่ยิ่งใหญ่ที่สุดในรอบปี</p>
+    <div class="hero-badge"><div class="bdot"></div><span id="nextFestName">วันไหว้ครู 15 เมษายน · กำลังจะมาถึง</span></div>
+  </div>
+</section>
+
+<!-- ── FEATURED: วันไหว้ครู ── -->
+<section class="featured">
+  <div class="feat-wrap reveal">
+    <div class="feat-visual">
+      <div class="feat-glow"></div>
+      <svg class="feat-svg" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="rg1" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#D4AF37" stop-opacity=".22"/>
+            <stop offset="100%" stop-color="#1E1108" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <!-- outer rings -->
+        <circle cx="140" cy="140" r="132" fill="url(#rg1)" stroke="#D4AF37" stroke-width=".7" opacity=".5"/>
+        <circle cx="140" cy="140" r="112" fill="none" stroke="#D4AF37" stroke-width=".6" stroke-dasharray="4 6" opacity=".45"/>
+        <circle cx="140" cy="140" r="88" fill="none" stroke="#D4AF37" stroke-width=".8" opacity=".5"/>
+        <!-- spinning ring (CSS) -->
+        <circle cx="140" cy="140" r="68" fill="none" stroke="#A8892A" stroke-width=".5" stroke-dasharray="3 7" opacity=".5" style="transform-origin:140px 140px;animation:spinSlow 30s linear infinite;"/>
+        <!-- 9-peak yantra -->
+        <polygon points="140,55 152,90 188,90 160,112 170,148 140,128 110,148 120,112 92,90 128,90" fill="#D4AF37" opacity=".14" stroke="#D4AF37" stroke-width=".9"/>
+        <!-- sacred flame -->
+        <path d="M140 38 Q152 60 145 78 Q140 85 135 78 Q128 60 140 38Z" fill="#D4AF37" opacity=".4"/>
+        <path d="M140 52 Q148 66 143 77 Q140 81 137 77 Q132 66 140 52Z" fill="#F5D76E" opacity=".55"/>
+        <!-- lotus base -->
+        <ellipse cx="140" cy="205" rx="55" ry="16" fill="#D4AF37" opacity=".1" stroke="#D4AF37" stroke-width=".8"/>
+        <path d="M140 190 Q115 180 108 195 Q122 193 140 190Z" fill="#D4AF37" opacity=".15"/>
+        <path d="M140 190 Q165 180 172 195 Q158 193 140 190Z" fill="#D4AF37" opacity=".15"/>
+        <path d="M140 190 Q120 170 112 180 Q126 182 140 190Z" fill="#D4AF37" opacity=".12"/>
+        <path d="M140 190 Q160 170 168 180 Q154 182 140 190Z" fill="#D4AF37" opacity=".12"/>
+        <!-- inner circle -->
+        <circle cx="140" cy="135" r="34" fill="#D4AF37" opacity=".1" stroke="#D4AF37" stroke-width="1.1"/>
+        <circle cx="140" cy="135" r="20" fill="#D4AF37" opacity=".18" stroke="#D4AF37" stroke-width=".9"/>
+        <text x="140" y="131" text-anchor="middle" font-size="11" fill="#D4AF37" opacity=".9" font-family="serif">ไหว้</text>
+        <text x="140" y="145" text-anchor="middle" font-size="11" fill="#D4AF37" opacity=".9" font-family="serif">ครู</text>
+        <!-- orbit text -->
+        <path id="tp" d="M140,18 a122,122 0 1,1 -0.1,0"/>
+        <text font-size="7.5" fill="#D4AF37" opacity=".4" font-family="serif"><textPath href="#tp">· นะ โม พุท ธา ยะ · วิ ชา ชา คะ โต · อิ ติ ปิ โส ภะ คะ วา · อะ ระ หัง สัม มา สัม พุท โธ ·</textPath></text>
+        <!-- dots -->
+        <circle cx="140" cy="8" r="3" fill="#D4AF37" opacity=".6"/>
+        <circle cx="250" cy="82" r="2.5" fill="#D4AF37" opacity=".5"/>
+        <circle cx="256" cy="160" r="2" fill="#D4AF37" opacity=".4"/>
+        <circle cx="226" cy="240" r="2.5" fill="#D4AF37" opacity=".5"/>
+        <circle cx="54" cy="240" r="2.5" fill="#D4AF37" opacity=".5"/>
+        <circle cx="24" cy="160" r="2" fill="#D4AF37" opacity=".4"/>
+        <circle cx="30" cy="82" r="2.5" fill="#D4AF37" opacity=".5"/>
+      </svg>
+    </div>
+
+    <div class="feat-info">
+      <div class="feat-badge"><span>⭐</span> งานประจำปีที่สำคัญที่สุด</div>
+      <p class="feat-eye">Annual Sacred Ceremony</p>
+      <h2 class="feat-title">พิธีไหว้ครูประจำปี</h2>
+      <div class="feat-date"><span>📅</span><strong>15 เมษายน</strong> ของทุกปี</div>
+      <p class="feat-desc">พิธีกรรมศักดิ์สิทธิ์ที่สืบทอดมายาวนาน เป็นโอกาสพิเศษสำหรับลูกศิษย์ทั่วโลกในการมาบูชาครู ต่ออายุพลังยันต์ และรับพรจากอาจารย์ตู๋โดยตรง พร้อมรับของมงคลที่ระลึก</p>
+      <div class="feat-perks">
+        <div class="perk"><span class="perk-i">✦</span><span>พิธีปลุกเสกและต่ออายุยันต์ที่มีอยู่แล้ว</span></div>
+        <div class="perk"><span class="perk-i">✦</span><span>รับของที่ระลึกมงคลจากอาจารย์โดยตรง</span></div>
+        <div class="perk"><span class="perk-i">✦</span><span>ส่วนลดพิเศษ 20% สำหรับลูกศิษย์เก่า</span></div>
+        <div class="perk"><span class="perk-i">✦</span><span>รับลูกค้าต่างประเทศ — มีล่ามภาษาอังกฤษ</span></div>
+      </div>
+      <div class="cd-wrap">
+        <div class="cd-lbl">นับถอยหลังถึงวันไหว้ครู</div>
+        <div class="cd">
+          <div class="cd-unit"><span class="cd-num" id="cdD">--</span><div class="cd-sub">วัน</div></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><span class="cd-num" id="cdH">--</span><div class="cd-sub">ชั่วโมง</div></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><span class="cd-num" id="cdM">--</span><div class="cd-sub">นาที</div></div>
+          <div class="cd-sep">:</div>
+          <div class="cd-unit"><span class="cd-num" id="cdS">--</span><div class="cd-sub">วินาที</div></div>
+        </div>
+      </div>
+      <div class="btns-row">
+        <a href="index.html#contact" class="btn btn-gold">🙏 จองที่นั่งพิธี</a>
+        <a href="tel:+66817836908" class="btn btn-out">📞 สอบถาม</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FESTIVALS GRID ── -->
+<section class="grid-sec">
+  <div class="sec-hd reveal">
+    <p class="sec-eye">All Festivals & Sacred Events</p>
+    <h2 class="sec-ttl">เทศกาลทั้งหมดตลอดปี</h2>
+    <div class="sec-div"><div class="sl l"></div><span class="sorn">᪻</span><div class="sl r"></div></div>
+  </div>
+
+  <div class="filters reveal">
+    <button class="fbtn active" data-f="all">ทั้งหมด</button>
+    <button class="fbtn" data-f="thai">พุทธศาสนา</button>
+    <button class="fbtn" data-f="seasonal">เทศกาลฤดูกาล</button>
+    <button class="fbtn" data-f="studio">งานของสำนัก</button>
+    <button class="fbtn" data-f="upcoming">กำลังจะมา</button>
+  </div>
+
+  <div class="fgrid" id="fgrid">
+
+    <!-- 1. วันสงกรานต์ -->
+    <div class="fc c-water reveal d1" data-f="seasonal upcoming" style="--card-color:#0EA5E9;--card-glow:rgba(14,165,233,.35);">
+      <div class="fc-img">
+        <div class="fc-imgbg"></div>
+        <svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="90" cy="90" r="80" stroke="#0EA5E9" stroke-width=".7" opacity=".3"/>
+          <circle cx="90" cy="90" r="58" fill="none" stroke="#0EA5E9" stroke-width=".5" stroke-dasharray="3 5" opacity=".4"/>
+          <!-- water drop -->
+          <path d="M90 28 Q105 55 98 72 Q90 82 82 72 Q75 55 90 28Z" fill="#38BDF8" opacity=".35"/>
+          <path d="M90 42 Q100 62 95 72 Q90 77 85 72 Q80 62 90 42Z" fill="#7DD3FC" opacity=".55"/>
+          <!-- urn / bowl -->
+          <path d="M62 110 Q62 138 90 142 Q118 138 118 110 L112 95 L68 95Z" fill="#D4AF37" opacity=".15" stroke="#D4AF37" stroke-width=".9"/>
+          <ellipse cx="90" cy="95" rx="22" ry="7" fill="#D4AF37" opacity=".22" stroke="#D4AF37" stroke-width=".8"/>
+          <!-- splash arcs -->
+          <path d="M50 82 Q38 60 52 48" fill="none" stroke="#38BDF8" stroke-width="1.3" stroke-linecap="round" opacity=".5"/>
+          <path d="M130 82 Q142 60 128 48" fill="none" stroke="#38BDF8" stroke-width="1.3" stroke-linecap="round" opacity=".5"/>
+          <circle cx="42" cy="45" r="4.5" fill="#38BDF8" opacity=".4"/>
+          <circle cx="138" cy="45" r="4.5" fill="#38BDF8" opacity=".4"/>
+          <circle cx="34" cy="100" r="3" fill="#38BDF8" opacity=".3"/>
+          <circle cx="146" cy="100" r="3" fill="#38BDF8" opacity=".3"/>
+          <text x="90" y="125" text-anchor="middle" font-size="10" fill="#D4AF37" opacity=".7" font-family="serif">สงกรานต์</text>
+          <text x="90" y="158" text-anchor="middle" font-size="7.5" fill="#D4AF37" opacity=".5" font-family="serif">นะ โม พุท ธา ยะ</text>
+        </svg>
+        <div class="chip-date" style="color:#38BDF8;border-color:rgba(56,189,248,.35);">13–15 เม.ย.</div>
+        <div class="chip-status s-live" style="background:rgba(14,165,233,.14);border:1px solid rgba(56,189,248,.3);color:#38BDF8;"><div class="sdot"></div>กำลังจะมา</div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-cat" style="color:#38BDF8;">🌊 เทศกาลน้ำ · ปีใหม่ไทย</div>
+        <div class="fc-title">วันสงกรานต์</div>
+        <div class="fc-en">Songkran · Thai New Year</div>
+        <p class="fc-desc">เทศกาลปีใหม่ไทยที่ศักดิ์สิทธิ์ที่สุด อาจารย์ตู๋จัดพิธีสรงน้ำพระพุทธรูปและอวยพรปีใหม่แก่ลูกศิษย์ พร้อมสักลายมงคลต้อนรับปีใหม่และต่ออายุยันต์</p>
+        <div class="fc-offers">
+          <div class="offer"><span class="oi">💧</span><span>พิธีสรงน้ำพระ · รับพรปีใหม่จากอาจารย์</span></div>
+          <div class="offer"><span class="oi">🎁</span><span>ส่วนลดพิเศษ 15% ตลอดเทศกาล 3 วัน</span></div>
+        </div>
+        <div class="fc-foot">
+          <span class="fc-date-txt">📅 13–15 เมษายน ทุกปี</span>
+          <a href="index.html#contact" class="fc-cta" style="color:#38BDF8;border-color:rgba(56,189,248,.3);">จองเลย →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. ตรุษจีน -->
+    <div class="fc c-chinese reveal d2" data-f="seasonal" style="--card-color:#E74C3C;--card-glow:rgba(231,76,60,.3);">
+      <div class="fc-img">
+        <div class="fc-imgbg"></div>
+        <svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="90" cy="90" r="80" stroke="#E74C3C" stroke-width=".6" opacity=".3" stroke-dasharray="4 5"/>
+          <!-- left lantern -->
+          <g stroke="#E74C3C" stroke-width="1.1" fill="none">
+            <ellipse cx="58" cy="82" rx="20" ry="28" fill="#E74C3C" opacity=".18"/>
+            <line x1="58" y1="54" x2="58" y2="44"/><circle cx="58" cy="41" r="4.5" fill="#FFD700" opacity=".6"/>
+            <line x1="58" y1="110" x2="58" y2="122"/>
+            <line x1="50" y1="122" x2="66" y2="122"/>
+            <line x1="52" y1="122" x2="50" y2="132"/><line x1="58" y1="122" x2="58" y2="134"/><line x1="64" y1="122" x2="66" y2="132"/>
+            <line x1="42" y1="74" x2="74" y2="74" stroke-width=".6" opacity=".5"/>
+            <line x1="40" y1="82" x2="76" y2="82" stroke-width=".6" opacity=".5"/>
+            <line x1="42" y1="90" x2="74" y2="90" stroke-width=".6" opacity=".5"/>
+          </g>
+          <!-- right lantern -->
+          <g stroke="#FFD700" stroke-width="1.1" fill="none">
+            <ellipse cx="122" cy="78" rx="20" ry="28" fill="#FFD700" opacity=".12"/>
+            <line x1="122" y1="50" x2="122" y2="40"/><circle cx="122" cy="37" r="4.5" fill="#E74C3C" opacity=".6"/>
+            <line x1="122" y1="106" x2="122" y2="118"/>
+            <line x1="114" y1="118" x2="130" y2="118"/>
+            <line x1="116" y1="118" x2="114" y2="128"/><line x1="122" y1="118" x2="122" y2="130"/><line x1="128" y1="118" x2="130" y2="128"/>
+            <line x1="106" y1="70" x2="138" y2="70" stroke-width=".6" opacity=".5"/>
+            <line x1="104" y1="78" x2="140" y2="78" stroke-width=".6" opacity=".5"/>
+            <line x1="106" y1="86" x2="138" y2="86" stroke-width=".6" opacity=".5"/>
+          </g>
+          <path d="M58 42 Q90 30 122 40" fill="none" stroke="#D4AF37" stroke-width=".8" stroke-dasharray="2 3" opacity=".5"/>
+          <!-- coin -->
+          <circle cx="90" cy="128" r="16" fill="#FFD700" opacity=".18" stroke="#FFD700" stroke-width=".9"/>
+          <circle cx="90" cy="128" r="8" fill="none" stroke="#FFD700" stroke-width=".8"/>
+          <text x="90" y="132" text-anchor="middle" font-size="9" fill="#FFD700" opacity=".75" font-family="serif">福</text>
+          <text x="90" y="162" text-anchor="middle" font-size="7.5" fill="#D4AF37" opacity=".55" font-family="serif">ตรุษจีน มงคล</text>
+        </svg>
+        <div class="chip-date" style="color:#E74C3C;border-color:rgba(231,76,60,.35);">ม.ค./ก.พ.</div>
+        <div class="chip-status s-past" style="background:rgba(100,100,100,.14);border:1px solid rgba(100,116,139,.2);color:#94A3B8;"><div class="sdot" style="background:#64748B;"></div>ผ่านไปแล้ว</div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-cat" style="color:#E74C3C;">🏮 เทศกาลจีน · มงคล</div>
+        <div class="fc-title">ตรุษจีน</div>
+        <div class="fc-en">Chinese New Year · Spring Festival</div>
+        <p class="fc-desc">วันมงคลสำคัญในการสักยันต์เรียกทรัพย์และเสริมโชคลาภ อาจารย์ตู๋จัดพิธีไหว้เทพเจ้าแห่งโชคและสักยันต์มหาลาภพิเศษตลอดช่วงเทศกาล</p>
+        <div class="fc-offers">
+          <div class="offer"><span class="oi">🧧</span><span>ยันต์มหาลาภ เรียกทรัพย์พิเศษ</span></div>
+          <div class="offer"><span class="oi">🎁</span><span>รับซองแดงมงคลฟรีทุกท่าน</span></div>
+        </div>
+        <div class="fc-foot">
+          <span class="fc-date-txt">📅 มกราคม–กุมภาพันธ์</span>
+          <a href="index.html#contact" class="fc-cta" style="color:#E74C3C;border-color:rgba(231,76,60,.3);">ปีหน้า →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. มาฆบูชา -->
+    <div class="fc c-makha reveal d3" data-f="thai" style="--card-color:#9B59B6;--card-glow:rgba(155,89,182,.3);">
+      <div class="fc-img">
+        <div class="fc-imgbg"></div>
+        <svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="90" cy="90" r="80" stroke="#9B59B6" stroke-width=".6" opacity=".3"/>
+          <!-- full moon -->
+          <circle cx="90" cy="65" r="34" fill="#9B59B6" opacity=".12" stroke="#D4AF37" stroke-width=".9"/>
+          <circle cx="90" cy="65" r="24" fill="#D4AF37" opacity=".1"/>
+          <circle cx="90" cy="65" r="13" fill="#D4AF37" opacity=".18"/>
+          <!-- moon rays (1250) -->
+          <g stroke="#9B59B6" stroke-width=".7" opacity=".38">
+            <line x1="90" y1="31" x2="90" y2="16"/><line x1="114" y1="41" x2="124" y2="28"/>
+            <line x1="124" y1="65" x2="139" y2="65"/><line x1="114" y1="89" x2="124" y2="102"/>
+            <line x1="90" y1="99" x2="90" y2="114"/><line x1="66" y1="89" x2="56" y2="102"/>
+            <line x1="56" y1="65" x2="41" y2="65"/><line x1="66" y1="41" x2="56" y2="28"/>
+          </g>
+          <!-- lotus -->
+          <g fill="#9B59B6" opacity=".18" stroke="#9B59B6" stroke-width=".8">
+            <ellipse cx="90" cy="138" rx="26" ry="9"/><ellipse cx="90" cy="128" rx="20" ry="14"/>
+            <ellipse cx="74" cy="126" rx="10" ry="16" transform="rotate(-22 74 126)"/>
+            <ellipse cx="106" cy="126" rx="10" ry="16" transform="rotate(22 106 126)"/>
+            <ellipse cx="64" cy="132" rx="8" ry="14" transform="rotate(-38 64 132)"/>
+            <ellipse cx="116" cy="132" rx="8" ry="14" transform="rotate(38 116 132)"/>
+          </g>
+          <circle cx="90" cy="128" r="7" fill="#D4AF37" opacity=".28" stroke="#D4AF37" stroke-width=".7"/>
+          <text x="90" y="161" text-anchor="middle" font-size="8" fill="#D4AF37" opacity=".6" font-family="serif">มาฆบูชา</text>
+        </svg>
+        <div class="chip-date" style="color:#9B59B6;border-color:rgba(155,89,182,.35);">ก.พ./มี.ค.</div>
+        <div class="chip-status s-past" style="background:rgba(100,100,100,.14);border:1px solid rgba(100,116,139,.2);color:#94A3B8;"><div class="sdot" style="background:#64748B;"></div>ผ่านไปแล้ว</div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-cat" style="color:#9B59B6;">☸️ วันสำคัญทางพุทธศาสนา</div>
+        <div class="fc-title">วันมาฆบูชา</div>
+        <div class="fc-en">Makha Bucha Day</div>
+        <p class="fc-desc">วันที่พระภิกษุ 1,250 รูปมาประชุมพร้อมกันโดยมิได้นัดหมาย อาจารย์ตู๋จัดพิธีเวียนเทียนและสักยันต์พิเศษเพื่อเสริมบุญบารมี</p>
+        <div class="fc-offers">
+          <div class="offer"><span class="oi">🕯</span><span>พิธีเวียนเทียน · สวดมนต์กลุ่ม</span></div>
+          <div class="offer"><span class="oi">✦</span><span>ยันต์เสริมบุญ · ราคาพิเศษ</span></div>
+        </div>
+        <div class="fc-foot">
+          <span class="fc-date-txt">📅 กุมภาพันธ์–มีนาคม</span>
+          <a href="index.html#contact" class="fc-cta" style="color:#9B59B6;border-color:rgba(155,89,182,.3);">ปีหน้า →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. วิสาขบูชา -->
+    <div class="fc c-visakha reveal d1" data-f="thai upcoming" style="--card-color:#27AE8F;--card-glow:rgba(39,174,143,.3);">
+      <div class="fc-img">
+        <div class="fc-imgbg"></div>
+        <svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="90" cy="90" r="80" stroke="#27AE8F" stroke-width=".6" opacity=".3"/>
+          <!-- bodhi tree trunk -->
+          <path d="M90 148 L90 98" stroke="#D4AF37" stroke-width="2.8" stroke-linecap="round"/>
+          <path d="M90 108 Q72 100 60 88" stroke="#D4AF37" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M90 108 Q108 100 120 88" stroke="#D4AF37" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M90 120 Q66 110 52 96" stroke="#D4AF37" stroke-width="1.3" stroke-linecap="round"/>
+          <path d="M90 120 Q114 110 128 96" stroke="#D4AF37" stroke-width="1.3" stroke-linecap="round"/>
+          <!-- foliage -->
+          <circle cx="90" cy="70" r="32" fill="#27AE8F" opacity=".1" stroke="#27AE8F" stroke-width=".8"/>
+          <circle cx="62" cy="78" r="20" fill="#27AE8F" opacity=".1" stroke="#27AE8F" stroke-width=".7"/>
+          <circle cx="118" cy="78" r="20" fill="#27AE8F" opacity=".1" stroke="#27AE8F" stroke-width=".7"/>
+          <circle cx="90" cy="52" r="18" fill="#27AE8F" opacity=".12" stroke="#27AE8F" stroke-width=".7"/>
+          <!-- heart leaves -->
+          <path d="M90 62 Q82 54 76 61 Q82 65 90 62Z" fill="#27AE8F" opacity=".3"/>
+          <path d="M90 62 Q98 54 104 61 Q98 65 90 62Z" fill="#27AE8F" opacity=".3"/>
+          <!-- rays -->
+          <g stroke="#D4AF37" stroke-width=".6" opacity=".3">
+            <line x1="90" y1="20" x2="90" y2="10"/>
+            <line x1="118" y1="28" x2="126" y2="20"/>
+            <line x1="135" y1="62" x2="145" y2="62"/>
+            <line x1="62" y1="28" x2="54" y2="20"/>
+            <line x1="45" y1="62" x2="35" y2="62"/>
+          </g>
+          <text x="90" y="166" text-anchor="middle" font-size="8" fill="#D4AF37" opacity=".65" font-family="serif">วิสาขบูชา</text>
+        </svg>
+        <div class="chip-date" style="color:#27AE8F;border-color:rgba(39,174,143,.35);">พ.ค./มิ.ย.</div>
+        <div class="chip-status s-live" style="background:rgba(39,174,143,.12);border:1px solid rgba(39,174,143,.3);color:#27AE8F;"><div class="sdot" style="background:#4ADE80;"></div>กำลังจะมา</div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-cat" style="color:#27AE8F;">🌳 วันสำคัญทางพุทธศาสนา</div>
+        <div class="fc-title">วันวิสาขบูชา</div>
+        <div class="fc-en">Visakha Bucha Day</div>
+        <p class="fc-desc">วันประสูติ ตรัสรู้ และปรินิพพานของพระพุทธเจ้า อาจารย์ตู๋จัดพิธีสักยันต์พระพุทธคุณพิเศษ เสริมบารมีและปัญญาให้ผู้ศรัทธา</p>
+        <div class="fc-offers">
+          <div class="offer"><span class="oi">☸️</span><span>ยันต์พุทธคุณ · เสริมปัญญาบารมี</span></div>
+          <div class="offer"><span class="oi">🕯</span><span>พิธีเวียนเทียนร่วมกัน</span></div>
+        </div>
+        <div class="fc-foot">
+          <span class="fc-date-txt">📅 พฤษภาคม–มิถุนายน</span>
+          <a href="index.html#contact" class="fc-cta" style="color:#27AE8F;border-color:rgba(39,174,143,.3);">จองเลย →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. อาสาฬหบูชา / เข้าพรรษา -->
+    <div class="fc c-asanha reveal d2" data-f="thai upcoming" style="--card-color:#2980B9;--card-glow:rgba(41,128,185,.3);">
+      <div class="fc-img">
+        <div class="fc-imgbg"></div>
+        <svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="90" cy="90" r="80" stroke="#2980B9" stroke-width=".6" opacity=".3"/>
+          <!-- dharma wheel -->
+          <circle cx="90" cy="90" r="55" fill="none" stroke="#2980B9" stroke-width="1" opacity=".5"/>
+          <circle cx="90" cy="90" r="40" fill="#2980B9" opacity=".07" stroke="#2980B9" stroke-width=".8"/>
+          <circle cx="90" cy="90" r="15" fill="#2980B9" opacity=".14" stroke="#D4AF37" stroke-width=".9"/>
+          <!-- 8 spokes -->
+          <g stroke="#D4AF37" stroke-width="1" opacity=".55">
+            <line x1="90" y1="35" x2="90" y2="145"/>
+            <line x1="35" y1="90" x2="145" y2="90"/>
+            <line x1="51" y1="51" x2="129" y2="129"/>
+            <line x1="129" y1="51" x2="51" y2="129"/>
+          </g>
+          <!-- rim dots -->
+          <circle cx="90" cy="35" r="5" fill="#D4AF37" opacity=".5"/>
+          <circle cx="145" cy="90" r="5" fill="#D4AF37" opacity=".5"/>
+          <circle cx="90" cy="145" r="5" fill="#D4AF37" opacity=".5"/>
+          <circle cx="35" cy="90" r="5" fill="#D4AF37" opacity=".5"/>
+          <circle cx="51" cy="51" r="4" fill="#D4AF37" opacity=".4"/>
+          <circle cx="129" cy="51" r="4" fill="#D4AF37" opacity=".4"/>
+          <circle cx="129" cy="129" r="4" fill="#D4AF37" opacity=".4"/>
+          <circle cx="51" cy="129" r="4" fill="#D4AF37" opacity=".4"/>
+          <!-- flame -->
+          <path d="M90 18 Q95 25 90 30 Q85 25 90 18Z" fill="#D4AF37" opacity=".5"/>
+          <text x="90" y="93" text-anchor="middle" font-size="9" fill="#D4AF37" opacity=".7" font-family="serif">ธรรม</text>
+          <text x="90" y="165" text-anchor="middle" font-size="7.5" fill="#D4AF37" opacity=".6" font-family="serif">อาสาฬหบูชา</text>
+        </svg>
+        <div class="chip-date" style="color:#2980B9;border-color:rgba(41,128,185,.35);">ก.ค./ส.ค.</div>
+        <div class="chip-status s-live" style="background:rgba(41,128,185,.12);border:1px solid rgba(41,128,185,.3);color:#2980B9;"><div class="sdot" style="background:#4ADE80;"></div>กำลังจะมา</div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-cat" style="color:#2980B9;">☸️ วันสำคัญทางพุทธศาสนา</div>
+        <div class="fc-title">อาสาฬหบูชา · เข้าพรรษา</div>
+        <div class="fc-en">Asanha Bucha · Buddhist Lent</div>
+        <p class="fc-desc">วันแห่งธรรมะและการเข้าพรรษา ช่วงเวลาศักดิ์สิทธิ์ในการสักยันต์เพื่อเสริมศีลธรรมและความสงบจิตใจตลอดพรรษา</p>
+        <div class="fc-offers">
+          <div class="offer"><span class="oi">🕯</span><span>แห่เทียนพรรษา · พิธีพิเศษ</span></div>
+          <div class="offer"><span class="oi">✦</span><span>ยันต์ธรรมจักร · เสริมศีลธรรม</span></div>
+        </div>
+        <div class="fc-foot">
+          <span class="fc-date-txt">📅 กรกฎาคม–สิงหาคม</span>
+          <a href="index.html#contact" class="fc-cta" style="color:#2980B9;border-color:rgba(41,128,185,.3);">จองเลย →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. วันเกิดอาจารย์ -->
+    <div class="fc c-waikru reveal d3" data-f="studio upcoming" style="--card-color:#D4AF37;--card-glow:rgba(212,175,55,.35);">
+      <div class="fc-img">
+        <div class="fc-imgbg"></div>
+        <svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="90" cy="90" r="80" stroke="#D4AF37" stroke-width=".8" opacity=".4"/>
+          <circle cx="90" cy="90" r="62" fill="none" stroke="#D4AF37" stroke-width=".5" stroke-dasharray="3 5" opacity=".38"/>
+          <!-- crown -->
+          <path d="M58 102 L58 78 L70 90 L82 65 L90 82 L98 65 L110 90 L122 78 L122 102 Z" fill="#D4AF37" opacity=".2" stroke="#D4AF37" stroke-width="1.1"/>
+          <path d="M58 102 L122 102" stroke="#D4AF37" stroke-width="1.6"/>
+          <!-- crown jewels -->
+          <circle cx="90" cy="68" r="6" fill="#D4AF37" opacity=".5"/>
+          <circle cx="70" cy="84" r="5" fill="#D4AF37" opacity=".4"/>
+          <circle cx="110" cy="84" r="5" fill="#D4AF37" opacity=".4"/>
+          <!-- master figure -->
+          <circle cx="90" cy="122" r="16" fill="#D4AF37" opacity=".16" stroke="#D4AF37" stroke-width=".9"/>
+          <ellipse cx="90" cy="145" rx="24" ry="14" fill="#D4AF37" opacity=".1" stroke="#D4AF37" stroke-width=".8"/>
+          <!-- radiance -->
+          <g stroke="#D4AF37" stroke-width=".6" opacity=".28">
+            <line x1="90" y1="24" x2="90" y2="13"/>
+            <line x1="126" y1="36" x2="133" y2="27"/>
+            <line x1="142" y1="72" x2="153" y2="68"/>
+            <line x1="54" y1="36" x2="47" y2="27"/>
+            <line x1="38" y1="72" x2="27" y2="68"/>
+          </g>
+          <text x="90" y="166" text-anchor="middle" font-size="8" fill="#D4AF37" opacity=".7" font-family="serif">วันเกิดอาจารย์</text>
+        </svg>
+        <div class="chip-date" style="color:var(--gold);border-color:rgba(212,175,55,.38);">ส.ค.</div>
+        <div class="chip-status s-live" style="background:rgba(212,175,55,.1);border:1px solid rgba(212,175,55,.3);color:var(--gold);"><div class="sdot" style="background:var(--gold-l);"></div>กำลังจะมา</div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-cat" style="color:var(--gold);">🎂 วันพิเศษของสำนัก</div>
+        <div class="fc-title">วันเกิดอาจารย์ตู๋</div>
+        <div class="fc-en">Master's Birthday Celebration</div>
+        <p class="fc-desc">วันคล้ายวันเกิดของอาจารย์ตู๋ นะเมตตา จัดงานฉลองพิเศษ ลูกศิษย์จากทั่วโลกมาร่วมอวยพร รับส่วนลดพิเศษสุดและของที่ระลึกจากอาจารย์โดยตรง</p>
+        <div class="fc-offers">
+          <div class="offer"><span class="oi">🎉</span><span>ส่วนลดพิเศษ 25% ทุกลายยันต์</span></div>
+          <div class="offer"><span class="oi">🎁</span><span>รับของที่ระลึกมงคลพิเศษจากอาจารย์</span></div>
+        </div>
+        <div class="fc-foot">
+          <span class="fc-date-txt">📅 สิงหาคม ทุกปี</span>
+          <a href="index.html#contact" class="fc-cta" style="color:var(--gold);border-color:rgba(212,175,55,.3);">จองเลย →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. ลอยกระทง -->
+    <div class="fc c-light reveal d4" data-f="seasonal upcoming" style="--card-color:#F97316;--card-glow:rgba(249,115,22,.3);">
+      <div class="fc-img">
+        <div class="fc-imgbg"></div>
+        <svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="90" cy="90" r="80" stroke="#F97316" stroke-width=".6" opacity=".3"/>
+          <!-- moon -->
+          <circle cx="90" cy="55" r="26" fill="#D4AF37" opacity=".18" stroke="#D4AF37" stroke-width=".8"/>
+          <circle cx="90" cy="55" r="16" fill="#D4AF37" opacity=".22"/>
+          <!-- kratong -->
+          <path d="M62 124 Q62 144 90 148 Q118 144 118 124 L112 108 L68 108Z" fill="#F97316" opacity=".18" stroke="#D4AF37" stroke-width=".9"/>
+          <ellipse cx="90" cy="108" rx="22" ry="7" fill="#D4AF37" opacity=".22" stroke="#D4AF37" stroke-width=".8"/>
+          <ellipse cx="90" cy="104" rx="14" ry="5" fill="#27AE8F" opacity=".3"/>
+          <!-- incense sticks -->
+          <line x1="84" y1="104" x2="80" y2="78" stroke="#D4AF37" stroke-width="1.3" stroke-linecap="round"/>
+          <line x1="90" y1="104" x2="90" y2="76" stroke="#D4AF37" stroke-width="1.3" stroke-linecap="round"/>
+          <line x1="96" y1="104" x2="100" y2="78" stroke="#D4AF37" stroke-width="1.3" stroke-linecap="round"/>
+          <!-- candle flames -->
+          <path d="M80 78 Q82 73 80 69 Q78 73 80 78Z" fill="#F97316" opacity=".65"/>
+          <path d="M90 76 Q92 71 90 67 Q88 71 90 76Z" fill="#F97316" opacity=".65"/>
+          <path d="M100 78 Q102 73 100 69 Q98 73 100 78Z" fill="#F97316" opacity=".65"/>
+          <!-- sparkles -->
+          <circle cx="54" cy="60" r="2.5" fill="#F97316" opacity=".45"/>
+          <circle cx="126" cy="68" r="2.5" fill="#F97316" opacity=".45"/>
+          <circle cx="42" cy="100" r="2" fill="#D4AF37" opacity=".4"/>
+          <circle cx="138" cy="95" r="2" fill="#D4AF37" opacity=".4"/>
+          <text x="90" y="166" text-anchor="middle" font-size="8" fill="#D4AF37" opacity=".65" font-family="serif">ลอยกระทง</text>
+        </svg>
+        <div class="chip-date" style="color:#F97316;border-color:rgba(249,115,22,.35);">พ.ย.</div>
+        <div class="chip-status s-live" style="background:rgba(249,115,22,.12);border:1px solid rgba(249,115,22,.3);color:#F97316;"><div class="sdot" style="background:#4ADE80;"></div>กำลังจะมา</div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-cat" style="color:#F97316;">🪔 เทศกาลแสงและน้ำ</div>
+        <div class="fc-title">วันลอยกระทง</div>
+        <div class="fc-en">Loy Krathong Festival</div>
+        <p class="fc-desc">คืนแห่งการลอยความทุกข์และบาปกรรมออกไปกับสายน้ำ อาจารย์ตู๋จัดพิธีพิเศษสักยันต์ล้างอาถรรพ์ และเปิดทางใหม่สู่ชีวิตที่ดีกว่าเดิม</p>
+        <div class="fc-offers">
+          <div class="offer"><span class="oi">🌕</span><span>พิธีลอยกระทงมงคล · ล้างบาปเคราะห์</span></div>
+          <div class="offer"><span class="oi">✦</span><span>ยันต์แก้เคราะห์ · ราคาพิเศษคืนพิเศษ</span></div>
+        </div>
+        <div class="fc-foot">
+          <span class="fc-date-txt">📅 พฤศจิกายน (ขึ้น 15 ค่ำ)</span>
+          <a href="index.html#contact" class="fc-cta" style="color:#F97316;border-color:rgba(249,115,22,.3);">จองเลย →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. ออกพรรษา -->
+    <div class="fc c-thai reveal d5" data-f="thai upcoming" style="--card-color:#C0392B;--card-glow:rgba(192,57,43,.3);">
+      <div class="fc-img">
+        <div class="fc-imgbg"></div>
+        <svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="90" cy="90" r="80" stroke="#C0392B" stroke-width=".6" opacity=".3"/>
+          <!-- chedi / temple -->
+          <path d="M90 22 L100 56 L106 70 L110 88 L70 88 L74 70 L80 56Z" fill="#C0392B" opacity=".14" stroke="#D4AF37" stroke-width="1.1"/>
+          <path d="M90 22 L97 52 L101 66 L104 82 L76 82 L79 66 L83 52Z" fill="#D4AF37" opacity=".09"/>
+          <line x1="90" y1="22" x2="90" y2="12"/>
+          <circle cx="90" cy="9" r="6" fill="#D4AF37" opacity=".48"/>
+          <!-- base levels -->
+          <rect x="62" y="88" width="56" height="11" fill="#C0392B" opacity=".18" stroke="#D4AF37" stroke-width=".8"/>
+          <rect x="52" y="99" width="76" height="11" fill="#C0392B" opacity=".14" stroke="#D4AF37" stroke-width=".7"/>
+          <rect x="42" y="110" width="96" height="20" fill="#C0392B" opacity=".1" stroke="#D4AF37" stroke-width=".7"/>
+          <!-- candles -->
+          <line x1="60" y1="110" x2="60" y2="92"/><line x1="120" y1="110" x2="120" y2="92"/>
+          <path d="M60 92 Q62 87 60 83 Q58 87 60 92Z" fill="#D4AF37" opacity=".5"/>
+          <path d="M120 92 Q122 87 120 83 Q118 87 120 92Z" fill="#D4AF37" opacity=".5"/>
+          <!-- offering plate -->
+          <ellipse cx="90" cy="130" rx="20" ry="6" fill="#D4AF37" opacity=".14" stroke="#D4AF37" stroke-width=".7"/>
+          <text x="90" y="162" text-anchor="middle" font-size="8" fill="#D4AF37" opacity=".65" font-family="serif">วันออกพรรษา</text>
+        </svg>
+        <div class="chip-date" style="color:#C0392B;border-color:rgba(192,57,43,.35);">ต.ค./พ.ย.</div>
+        <div class="chip-status s-live" style="background:rgba(192,57,43,.12);border:1px solid rgba(192,57,43,.3);color:#C0392B;"><div class="sdot" style="background:#4ADE80;"></div>กำลังจะมา</div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-cat" style="color:#C0392B;">🏮 วันสำคัญทางพุทธศาสนา</div>
+        <div class="fc-title">วันออกพรรษา</div>
+        <div class="fc-en">Ok Phansa · End of Buddhist Lent</div>
+        <p class="fc-desc">วันสิ้นสุดพรรษาและเริ่มต้นใหม่ อาจารย์ตู๋จัดพิธีทำบุญใหญ่และเปิดรับลูกค้าสักยันต์ครั้งแรกหลังออกพรรษาอย่างเป็นทางการ</p>
+        <div class="fc-offers">
+          <div class="offer"><span class="oi">🏮</span><span>พิธีตักบาตรเทโวโรหณะ</span></div>
+          <div class="offer"><span class="oi">✦</span><span>เปิดรับสักยันต์ครั้งแรกหลังออกพรรษา</span></div>
+        </div>
+        <div class="fc-foot">
+          <span class="fc-date-txt">📅 ตุลาคม–พฤศจิกายน</span>
+          <a href="index.html#contact" class="fc-cta" style="color:#C0392B;border-color:rgba(192,57,43,.3);">จองเลย →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. ปีใหม่สากล -->
+    <div class="fc c-newyear reveal d6" data-f="seasonal upcoming" style="--card-color:#6366F1;--card-glow:rgba(99,102,241,.3);">
+      <div class="fc-img">
+        <div class="fc-imgbg"></div>
+        <svg viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="90" cy="90" r="80" stroke="#818CF8" stroke-width=".6" opacity=".3"/>
+          <!-- firework rays -->
+          <g stroke="#818CF8" stroke-width=".8" opacity=".5">
+            <line x1="90" y1="50" x2="90" y2="28"/><line x1="114" y1="58" x2="128" y2="40"/>
+            <line x1="122" y1="82" x2="144" y2="76"/><line x1="114" y1="106" x2="128" y2="124"/>
+            <line x1="90" y1="114" x2="90" y2="136"/><line x1="66" y1="106" x2="52" y2="124"/>
+            <line x1="58" y1="82" x2="36" y2="76"/><line x1="66" y1="58" x2="52" y2="40"/>
+          </g>
+          <g fill="#818CF8" opacity=".45">
+            <circle cx="90" cy="27" r="3.5"/><circle cx="129" cy="39" r="3"/>
+            <circle cx="145" cy="75" r="3"/><circle cx="129" cy="125" r="3"/>
+            <circle cx="90" cy="137" r="3.5"/><circle cx="51" cy="125" r="3"/>
+            <circle cx="35" cy="75" r="3"/><circle cx="51" cy="39" r="3"/>
+          </g>
+          <!-- starburst -->
+          <circle cx="90" cy="82" r="34" fill="#6366F1" opacity=".08" stroke="#6366F1" stroke-width=".7"/>
+          <polygon points="90,50 96,72 118,72 101,85 107,108 90,95 73,108 79,85 62,72 84,72" fill="#D4AF37" opacity=".18" stroke="#D4AF37" stroke-width=".7"/>
+          <circle cx="90" cy="82" r="14" fill="#D4AF37" opacity=".2" stroke="#D4AF37" stroke-width=".8"/>
+          <text x="90" y="86" text-anchor="middle" font-size="9" fill="#D4AF37" opacity=".85" font-family="sans-serif" font-weight="bold">2026</text>
+          <text x="90" y="130" text-anchor="middle" font-size="9" fill="#D4AF37" opacity=".5" font-family="serif">Happy New Year</text>
+          <text x="90" y="144" text-anchor="middle" font-size="8" fill="#D4AF37" opacity=".55" font-family="serif">สวัสดีปีใหม่</text>
+          <text x="90" y="165" text-anchor="middle" font-size="7.5" fill="#D4AF37" opacity=".45" font-family="serif">นะ มะ พะ ทะ</text>
+        </svg>
+        <div class="chip-date" style="color:#818CF8;border-color:rgba(129,140,248,.35);">1 ม.ค.</div>
+        <div class="chip-status s-live" style="background:rgba(99,102,241,.12);border:1px solid rgba(129,140,248,.3);color:#818CF8;"><div class="sdot" style="background:#4ADE80;"></div>กำลังจะมา</div>
+      </div>
+      <div class="fc-body">
+        <div class="fc-cat" style="color:#818CF8;">🎆 เทศกาลปีใหม่สากล</div>
+        <div class="fc-title">ปีใหม่สากล 2026</div>
+        <div class="fc-en">New Year 2026 · Happy New Year</div>
+        <p class="fc-desc">ต้อนรับปีใหม่ด้วยการสักยันต์มงคลตั้งต้น ล้างสิ่งไม่ดีในปีเก่าออกไป เปิดทางให้โชคและความสำเร็จไหลเข้ามาในปีใหม่อย่างเต็มพิกัด</p>
+        <div class="fc-offers">
+          <div class="offer"><span class="oi">🎆</span><span>ยันต์เปิดปีใหม่ · เริ่มต้นใหม่ที่ดีกว่า</span></div>
+          <div class="offer"><span class="oi">🌟</span><span>แพ็กเกจพิเศษ 3 ยันต์ ราคาพิเศษ</span></div>
+        </div>
+        <div class="fc-foot">
+          <span class="fc-date-txt">📅 1 มกราคม 2026</span>
+          <a href="index.html#contact" class="fc-cta" style="color:#818CF8;border-color:rgba(129,140,248,.3);">จองเลย →</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /fgrid -->
+</section>
+
+<!-- ── CALENDAR STRIP ── -->
+<section class="cal-sec">
+  <div class="sec-hd reveal">
+    <p class="sec-eye">Event Calendar</p>
+    <h2 class="sec-ttl">ปฏิทินเทศกาลตลอดปี</h2>
+    <div class="sec-div"><div class="sl l"></div><span class="sorn">᪻</span><div class="sl r"></div></div>
+  </div>
+  <div class="calendar-strip reveal">
+    <div class="cal-mo"><div class="cal-mo-name">มกราคม</div>
+      <div class="cal-ev" style="border-color:#E74C3C;"><div class="cdot" style="background:#E74C3C;"></div><div><div class="cal-ev-n">ตรุษจีน</div><div class="cal-ev-d">ม.ค./ก.พ.</div></div></div></div>
+    <div class="cal-mo"><div class="cal-mo-name">กุมภาพันธ์</div>
+      <div class="cal-ev" style="border-color:#9B59B6;"><div class="cdot" style="background:#9B59B6;"></div><div><div class="cal-ev-n">มาฆบูชา</div><div class="cal-ev-d">ก.พ./มี.ค.</div></div></div></div>
+    <div class="cal-mo"><div class="cal-mo-name">เมษายน</div>
+      <div class="cal-ev" style="border-color:#38BDF8;"><div class="cdot" style="background:#38BDF8;"></div><div><div class="cal-ev-n">สงกรานต์</div><div class="cal-ev-d">13–15 เม.ย.</div></div></div>
+      <div class="cal-ev" style="border-color:#D4AF37;"><div class="cdot" style="background:#D4AF37;"></div><div><div class="cal-ev-n">ไหว้ครู ⭐</div><div class="cal-ev-d">15 เม.ย.</div></div></div></div>
+    <div class="cal-mo"><div class="cal-mo-name">พฤษภาคม</div>
+      <div class="cal-ev" style="border-color:#27AE8F;"><div class="cdot" style="background:#27AE8F;"></div><div><div class="cal-ev-n">วิสาขบูชา</div><div class="cal-ev-d">พ.ค./มิ.ย.</div></div></div></div>
+    <div class="cal-mo"><div class="cal-mo-name">กรกฎาคม</div>
+      <div class="cal-ev" style="border-color:#2980B9;"><div class="cdot" style="background:#2980B9;"></div><div><div class="cal-ev-n">อาสาฬหบูชา</div><div class="cal-ev-d">ก.ค./ส.ค.</div></div></div></div>
+    <div class="cal-mo"><div class="cal-mo-name">สิงหาคม</div>
+      <div class="cal-ev" style="border-color:#D4AF37;"><div class="cdot" style="background:#D4AF37;"></div><div><div class="cal-ev-n">วันเกิดอาจารย์</div><div class="cal-ev-d">สิงหาคม</div></div></div></div>
+    <div class="cal-mo"><div class="cal-mo-name">ตุลาคม</div>
+      <div class="cal-ev" style="border-color:#C0392B;"><div class="cdot" style="background:#C0392B;"></div><div><div class="cal-ev-n">ออกพรรษา</div><div class="cal-ev-d">ต.ค./พ.ย.</div></div></div></div>
+    <div class="cal-mo"><div class="cal-mo-name">พฤศจิกายน</div>
+      <div class="cal-ev" style="border-color:#F97316;"><div class="cdot" style="background:#F97316;"></div><div><div class="cal-ev-n">ลอยกระทง</div><div class="cal-ev-d">พ.ย. ขึ้น 15 ค่ำ</div></div></div></div>
+    <div class="cal-mo"><div class="cal-mo-name">มกราคม 2026</div>
+      <div class="cal-ev" style="border-color:#818CF8;"><div class="cdot" style="background:#818CF8;"></div><div><div class="cal-ev-n">ปีใหม่สากล</div><div class="cal-ev-d">1 ม.ค. 2026</div></div></div></div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section class="srv-sec">
+  <div class="sec-hd reveal">
+    <p class="sec-eye">Festival Special Services</p>
+    <h2 class="sec-ttl">บริการพิเศษประจำเทศกาล</h2>
+    <div class="sec-div"><div class="sl l"></div><span class="sorn">᪻</span><div class="sl r"></div></div>
+  </div>
+  <div class="srv-grid">
+    <div class="srv-card reveal d1"><div class="srv-ico">🕯</div><div class="srv-ttl">พิธีปลุกเสกต่ออายุ</div><p class="srv-desc">ต่ออายุพลังยันต์ที่มีอยู่เดิม เสริมพลังและความคมชัดให้กลับมาแข็งแกร่งเหมือนวันแรกที่สัก</p><div class="srv-price">ฟรี (ลูกศิษย์เก่า)</div></div>
+    <div class="srv-card reveal d2"><div class="srv-ico">🎴</div><div class="srv-ttl">ยันต์มงคลตามเทศกาล</div><p class="srv-desc">ยันต์พิเศษที่ออกแบบเฉพาะสำหรับแต่ละเทศกาล มีพลังเฉพาะตัวที่เหมาะกับช่วงเวลานั้นๆ</p><div class="srv-price">ส่วนลด 10–25%</div></div>
+    <div class="srv-card reveal d3"><div class="srv-ico">📿</div><div class="srv-ttl">ของมงคลพิเศษ</div><p class="srv-desc">วัตถุมงคลที่ผ่านการปลุกเสกในช่วงเทศกาล ด้ายมงคล น้ำมนต์ หรือเครื่องรางพิเศษ</p><div class="srv-price">แตกต่างตามชนิด</div></div>
+    <div class="srv-card reveal d4"><div class="srv-ico">🌐</div><div class="srv-ttl">ไหว้ครูออนไลน์</div><p class="srv-desc">สำหรับลูกศิษย์ต่างประเทศ ร่วมพิธีไหว้ครูผ่าน Live Streaming และรับพรจากอาจารย์โดยตรง</p><div class="srv-price">ติดต่อสอบถาม</div></div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<div class="cta">
+  <h2 class="cta-ttl reveal">อย่าพลาดเทศกาลพิเศษครั้งต่อไป</h2>
+  <p class="cta-sub reveal">ลงทะเบียนรับการแจ้งเตือนล่วงหน้า หรือจองคิวเทศกาลที่สนใจได้เลยครับ</p>
+  <div class="cta-btns reveal">
+    <a href="pro1.html#reveal" class="btn btn-gold">🙏 จองคิวเทศกาล</a>
+    <a href="tel:+66817836908" class="btn btn-out">📞 (66) 065-472-1999</a>
+    <a href="pro1.html" class="btn btn-out">← หน้าหลัก</a>
+  </div>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="fc-copy">© 2024 สำนักสักยันต์อาจารย์ตู๋ นะเมตตา · สงวนลิขสิทธิ์</div>
+  <div style="display:flex;gap:20px;align-items:center;">
+    <a href="pro1.html" class="fc-link">← หน้าหลัก</a>
+    <span style="color:rgba(212,175,55,.2);">✦</span>
+    <a href="pro1.html#contact" class="fc-link">ติดต่อเรา →</a>
+  </div>
+</footer>
+
+<script src="pro2.js"></script>
+</body>
+</html>
